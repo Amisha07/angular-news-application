@@ -19,7 +19,15 @@
 }
 
 .action-buttons{
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    button {
+      flex-direction: row;
+      padding: 0 16px;
+      margin: 0 8px;
+    }
 }
     
 .example-container {

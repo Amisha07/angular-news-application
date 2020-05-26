@@ -5,7 +5,7 @@
   <span>News Headlines</span>  
   <span class="example-spacer"></span>
   
-  <button mat-raised-button [matMenuTriggerFor]="appMenu"><mat-icon>settings</mat-icon></button>
+  <button  mat-mini-fab  [matMenuTriggerFor]="appMenu"><mat-icon>settings</mat-icon></button>&nbsp;
   <button  mat-mini-fab  id="theme-selector" [mat-menu-trigger-for]="themeMenu"
             i18n-matTooltip="@@Select-a-theme"
             tabindex="-1">
@@ -68,6 +68,9 @@
 
 
 
+<div class="row">
+	<div class="col-6" 
+      >
   <mat-card class="example-card"  *ngFor="let article of mArticles">
 
     <mat-card-header>
@@ -85,12 +88,12 @@
     </mat-card-content>
 
     <mat-card-actions class="action-buttons">
-      <button mat-raised-button><mat-icon>thumb_up_alt</mat-icon> 12 Likes</button>
-      <button mat-button ><mat-icon>comment</mat-icon> Comments</button>
-      <button mat-button ><mat-icon>share</mat-icon> Share</button>
-      <a mat-button href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
+      <button mat-button color="accent"><mat-icon>thumb_up_alt</mat-icon> 12 Likes</button>
+      <button mat-button color="accent"><mat-icon>comment</mat-icon> Comments</button>
+      <button mat-button color="accent"><mat-icon>share</mat-icon> Share</button>
+      <a mat-button color="accent" href={{article.url}} target="_blank" ><mat-icon>visibility</mat-icon> More</a>
     </mat-card-actions>
 
   </mat-card>
-
+	</div></div>
 </mat-drawer-container>
